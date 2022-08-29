@@ -37,4 +37,7 @@ RUN rm /novnc.zip
 RUN chmod +x /system/conf.d/websockify.sh
 RUN chmod +x /system/supervisor.sh
 
+ENV PORT = 8000
+EXPOSE 8000
+
 CMD ["/system/supervisor.sh"]
